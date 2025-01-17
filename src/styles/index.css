@@ -1,7 +1,50 @@
-div {
- display: flex;
- justify-content: center;
- background-color: black;
- 
+.trafficLight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+.pole {
+    background-color: black;
+    width: 30px;
+    height: 70px;
+}
+
+.colorlights{
+    border-radius: 15%;
+    background-color: black;
+    width: 150px;
+    height: 370px;
+}
+
+.light-green {
+    margin-top:40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: green;
+    width: 70px;
+    height: 70px;
+}
+
+.light-yellow {
+    margin-top:40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    width: 70px;
+    height: 70px
+}
+
+.light-red {
+    margin-top:40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: red;
+    width: 70px;
+    height: 70px
+}
+
+.glow{
+    box-shadow:0px 0px 50px 10px rgba(219,241,190);
+}

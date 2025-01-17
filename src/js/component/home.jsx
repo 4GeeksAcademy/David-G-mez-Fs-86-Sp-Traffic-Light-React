@@ -4,15 +4,15 @@ import React, {useState} from "react";
 const Home = () => {
 
 	const [actualColor, setActualColor] = useState("");
-	console.log[actualColor];
+	console.log(actualColor);
 
 	return (
 		<div className="trafficLight">
 			<div className="pole"></div>
-			<div className="trafficLight">
-				<div className={`light green ${actualColor === "green" ? "glow" : ""}`} onClick={() => setActualColor("green")}></div>
-				<div className={`light yellow ${actualColor === "yellow" ? "glow" : ""}`} onClick={() => setActualColor("yellow")}></div>
-				<div className={`light red ${actualColor === "red" ? "glow" : ""}`} onClick={() => setActualColor("red")}></div>
+			<div className="colorlights">
+				<div className={`light-green ${actualColor === "green" ? "glow" : ""}`} onClick={() => setActualColor("green")}></div>
+				<div className={`light-yellow ${actualColor === "yellow" ? "glow" : ""}`} onClick={() => setActualColor("yellow")}></div>
+				<div className={`light-red ${actualColor === "red" ? "glow" : ""}`} onClick={() => setActualColor("red")}></div>
 			</div>
 		</div>
 	);
